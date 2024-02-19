@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        //time comp - O(n)
+        //time comp - O(n), space comp - O(n)
         unordered_map <int,int> umap; //store array elements as keys, indices as values
 
         for(int i=0; i<nums.size(); i++){
