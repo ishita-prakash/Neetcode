@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         //time comp - O(n), space comp - O(n)
-        unordered_map <int,int> umap; //store array elements as keys, indices as values
+        unordered_map <int,int> umap; //store array elements as 'keys' because same element can't be used twice, indices as 'values'
 
         for(int i=0; i<nums.size(); i++){
             if(umap.find(target - nums[i]) == umap.end()){ //if complement doesn't exist in umap
