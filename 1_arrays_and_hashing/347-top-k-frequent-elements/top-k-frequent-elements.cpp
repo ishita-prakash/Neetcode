@@ -1,8 +1,7 @@
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        //my solution
-        typedef pair<int, int> p;
+        typedef pair<int, int> p; //typedef existing_type new_type_name;
 
         vector<int> res; //answer vector
 
