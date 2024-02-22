@@ -1,6 +1,9 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
+
+        //TC: O(n), SC: O(n)
+
         int n = nums.size();
         vector<int> answer(n, 1); // n elements in answer vector, ach initialised with 1
 
