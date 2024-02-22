@@ -7,19 +7,19 @@ public:
         //edge cases
         if(n == 0 || n == 1)
             return answer;
-            
+
         int leftProduct = 1;
 
         for(int i=0; i<n; i++){
             answer[i] *= leftProduct;
-            leftProduct *= nums[i];
+            leftProduct *= nums[i]; // calcuate leftProduct for next value of i
         }
 
         int rightProduct = 1;
 
         for(int i=n-1; i>=0; i--){
             answer[i] *= rightProduct;
-            rightProduct *= nums[i];
+            rightProduct *= nums[i]; // calculate right product for next value of i
         }
 
         return answer;
