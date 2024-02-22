@@ -5,8 +5,9 @@ public:
         vector<int> answer(n, 1); // n elements in answer vector, ach initialised with 1
 
         //edge cases
-
-
+        if(n == 0 || n == 1)
+            return answer;
+            
         int leftProduct = 1;
 
         for(int i=0; i<n; i++){
