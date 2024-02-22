@@ -5,7 +5,7 @@ public:
         //TC: O(n), SC: O(n)
 
         int n = nums.size();
-        vector<int> answer(n, 1); // n elements in answer vector, ach initialised with 1
+        vector<int> answer(n, 1); // n elements in answer vector, each initialised with 1
 
         //edge cases
         if(n == 0 || n == 1)
