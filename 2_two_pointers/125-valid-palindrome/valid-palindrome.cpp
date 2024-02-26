@@ -15,8 +15,8 @@ public:
 
         for(char x: s){
             if(isalnum(x)){
-                if(x >= 'A' && x <= 'Z'){
-                    x += 32;
+                if(x >= 'A' && x <= 'Z'){ // convert uppercase to lowercase
+                    x += 32; 
                     s1 += x;
                 }
                 else{
@@ -25,7 +25,8 @@ public:
             }
         }
 
-        stack<char> st;
+        //use stack for reversing the string and comparing
+        stack<char> st; 
 
         for(char x: s1){
             st.push(x);
