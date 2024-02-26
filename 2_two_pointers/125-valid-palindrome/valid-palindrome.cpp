@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
+        //my solution
         //edge case
         if(s.length() == 0){
             return true;
