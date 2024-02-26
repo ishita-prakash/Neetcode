@@ -2,8 +2,12 @@ class Solution {
 public:
     bool isPalindrome(string s) {
         //my solution
-        //edge case
+        //edge cases
         if(s.length() == 0){
+            return true;
+        }
+
+        if(s.length() == 1){
             return true;
         }
 
