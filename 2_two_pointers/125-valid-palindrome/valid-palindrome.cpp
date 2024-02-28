@@ -1,7 +1,36 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        //my solution
+        //2 pointers solution
+        int start_ptr = 0;
+        int end_ptr = s.size() - 1;
+
+        while(start_ptr <= end_ptr){
+            if(!isalnum(s[start_ptr])){
+                start_ptr++;
+                continue;
+            }
+
+            if(!isalnum(s[end_ptr])){
+                end_ptr--;
+                continue;
+            }
+
+            if(tolower(s[start_ptr]) != tolower(s[end_ptr])){
+                return false;
+            }
+
+            else{
+                start_ptr++;
+                end_ptr--;
+            }
+        }
+
+        return true;
+    }
+};
+
+/*//my solution
         //edge cases
         if(s.length() == 0){
             return true;
@@ -42,7 +71,4 @@ public:
         if(s1 == s2)
             return true;
         else
-            return false;
-
-    }
-};
+            return false; */
