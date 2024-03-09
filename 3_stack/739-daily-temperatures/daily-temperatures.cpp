@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
-        //monotonic decreasing stack concept
+        //monotonic non-increasing stack concept
         vector<int> res(temperatures.size(), 0);
 
         stack<pair<int,int>> st; //value, index
