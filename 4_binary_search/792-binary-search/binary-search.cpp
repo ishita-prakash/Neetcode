@@ -10,7 +10,7 @@ public:
                 return mid;
             }
 
-            if(nums[mid] > target){
+            else if(nums[mid] > target){
                 r = mid - 1;
             }
             else{
